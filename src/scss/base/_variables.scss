@@ -1,0 +1,13 @@
+$mainColor: #c70101;
+$textMainColor: #0d0d0d;
+$fontFamily: 'Museo Sans Cyrl';
+$fontSize: 16px;
+
+$index-1: 1; // Для наповзаючих елементів у загальному потоці
+$index-2: 2; // Для наповзаючих елементів у загальному потоці
+$index-3: 3; // Для масок
+$index-4: 4; // Для сайдбарів
+$index-5: 5; // Для модалок
+$index-6: 6; // Для елементів перекривающих все
+
+$mouseDevice: '(hover: hover) and (pointer: fine)'; // Медіазапит обирає тільки мишки і тачпад
