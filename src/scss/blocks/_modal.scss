@@ -1,0 +1,68 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  min-height: 402px;
+  padding: 35px 40px 40px 40px;
+  background: #f2f2f2;
+  text-align: center;
+
+  @include media(max, 568px) {
+    width: 280px;
+    padding: 25px 15px 15px 15px;
+  }
+
+  &__close {
+    position: absolute;
+    right: -40px;
+    top: 0;
+    color: $mainColor;
+    font-size: 40px;
+    line-height: 21px;
+    cursor: pointer;
+
+    @include media(max, 568px){
+      right: 3px;
+      top: 0px;
+      font-size: 30px;
+      line-height: 20px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &__subtitle {
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  &__form {
+    margin-top: 25px;
+  }
+
+  &--mini {
+    min-height: 143px;
+  }
+}
+
+#consultation,
+#order,
+#thanks {
+  display: none;
+}

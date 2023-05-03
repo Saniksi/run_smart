@@ -2,22 +2,24 @@
   padding: 0;
   margin: 0;
   border: 0;
+  // -webkit-tap-highlight-color: transparent;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  // -webkit-tap-highlight-color: transparent;
 }
 
 :focus,
 :active {
-  //outline: none;
+  // outline: none;
 }
 
 a:focus,
 a:active {
-  //outline: none;
+  // outline: none;
 }
 
 html,
@@ -26,16 +28,16 @@ body {
 }
 
 body {
-  color: $textMainColor;
-  font-family: $fontFamily;
+  color: $mainTextColor;
+  font-family: $mainFontFamily;
   line-height: 1;
-  font-size: $fontSize;
+  font-size: $mainFontSize;
 }
 
 input,
 button,
 textarea {
-  font-family: $fontFamily;
+  font-family: $mainFontFamily;
   font-size: inherit;
 }
 
@@ -51,7 +53,7 @@ a {
 
 a:link,
 a:visited {
-  text-decoration: none;
+  // text-decoration: none;
 }
 
 a:hover {

@@ -1,0 +1,136 @@
+.catalog-item {
+  padding: 20px;
+  width: 300px;
+  min-height: 442px;
+  border: 2px solid #e8e8e8;
+  overflow: hidden;
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 200px;
+  }
+
+  &__subtitle {
+    margin-top: 15px;
+    font-weight: 700;
+    line-height: 1.56;
+    text-align: center;
+  }
+
+  &__desc {
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.57;
+    text-align: center;
+  }
+
+  &__link {
+    margin-top: 10px;
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: $mainColor;
+  }
+
+  &__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 17px;
+    padding-top: 17px;
+    border-top: 1px solid #e8e8e8;
+  }
+
+  &__prices {
+  }
+
+  &__price-old {
+    font-weight: 300;
+    font-size: 14px;
+    text-decoration-line: line-through;
+    color: #555555;
+  }
+
+  &__price {
+    margin-top: 2px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #050505;
+  }
+
+  &__btn {
+    width: 135px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__wrapper {
+    display: flex;
+    width: calc(200% + 40px);
+  }
+
+  &__content {
+    transform: translateX(-100%);
+    width: 50%;
+    margin-right: 0;
+    transition: all 0.5s;
+
+    &--active {
+      transform: translateX(0%);
+      margin-right: 20px;
+    }
+  }
+
+  &__list {
+    transform: translateX(0%);
+    margin-left: 20px;
+    padding-right: 20px;
+    padding-left: 19px;
+    width: 50%;
+    transition: all 0.5s;
+
+    &--active {
+      transform: translateX(-100%);
+      margin-left: 0;
+    }
+
+    li {
+      position: relative;
+      margin-bottom: 20px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #555555;
+
+      &:last-child {
+        margin-bottom: 100px;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: -16px;
+        width: 5px;
+        height: 5px;
+        background-color: $mainColor;
+      }
+    }
+  }
+
+  &__back {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(calc(-50% - 19px));
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration-line: underline;
+    color: $mainColor;
+  }
+}
